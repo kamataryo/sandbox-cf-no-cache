@@ -1,0 +1,21 @@
+service: sandbox-cf-sls
+provider:
+  name: aws
+
+plugins:
+  - serverless-offline
+
+functions:
+  cache:
+    handler: src/index.handler
+    events:
+      - http:
+          path: cache
+          method: GET
+
+  no-cache:
+    handler: src/index.handler
+    events:
+      - http:
+          path: no-cache
+          method: GET

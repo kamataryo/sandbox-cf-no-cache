@@ -1,12 +1,16 @@
 {
-  "name": "sandbox-cf-no-cache",
+  "name": "sandbox-sls-cf",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:kamataryo/sandbox-cf-no-cache.git",
+  "repository": "git@github.com:kamataryo/sandbox-sls-cf.git",
   "author": "<kamataryo@users.noreply.github.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "start": "sls offline"
+  },
   "devDependencies": {
-    "serverless": "^2.15.0"
+    "serverless": "^2.15.0",
+    "serverless-offline": "^6.8.0"
   }
 }
