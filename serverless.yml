@@ -1,4 +1,4 @@
-service: sandbox-cf-sls
+service: sandbox-sls-cf
 provider:
   name: aws
 
