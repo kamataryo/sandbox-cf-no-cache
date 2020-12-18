@@ -1,6 +1,9 @@
 service: sandbox-sls-cf
 provider:
   name: aws
+  endpointType: REGIONAL
+  apiGateway:
+    shouldStartNameWithService: true
 
 plugins:
   - serverless-offline
